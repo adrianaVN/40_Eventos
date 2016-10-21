@@ -1,0 +1,15 @@
+#gray{
+	background-color: #D7D4D4;
+}
+.text{
+	width: 100%;
+	padding: 4%;
+	margin-top: 5%;
+}
+.but{
+	margin-top: 4%;
+	padding: 1%;
+}
+.tareas .lista .li:hover{
+	text-decoration: line-through;
+}
