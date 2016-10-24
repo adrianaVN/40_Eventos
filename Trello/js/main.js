@@ -1,19 +1,53 @@
-contador=0
+var box = document.createElement('input');
+var contenedor = document.createElement('div');
+
 function crear(obj){
-	contador++;
 	espacio = document.getElementById('espacio');
-	contenedor = document.createElement('div');
-	contenedor.id ='div'+contador;
+	contenedor.id ='div'
 	espacio.appendChild(contenedor);
 
-	var box = document.createElement('input');
-	box.innerHTML ='<input type="text" name="box" /*/ placeholder="ingresa el titulo de tu lista">';
+	
+	box.setAttribute('type', 'text');
+	box.setAttribute('placeholder', 'ingrese nombre de la lista');
+	box.setAttribute('class', 'espace')
 	contenedor.appendChild(box);
-
-	boton = document.createElement('button');
-	boton.innerHTML='<input type="button" class="btn btn-succes" value="Guardar" onclick="guardar()">';
 	 
-	 function guardar(){
-	 	texto = getElementByTagName(boton);
-	 }
+	var boton = document.createElement('button');
+	boton.className='btn btn-success marl';
+	boton.innerHTML ='Guardar';
+	contenedor.appendChild(boton);
+	boton.setAttribute('onclick','guardar()');
+
+
 }
+
+function guardar(){
+ 	
+ 	contenedor2 = document.createElement('div');
+ 	contenedor2.setAttribute('class', 'div1');
+ 	contenedor.appendChild(contenedor2);
+
+ 	var texto = document.createElement('p');
+ 	texto.id ="texto";
+ 	contenedor2.appendChild(texto);
+ 	var tituloList = document.createElement('h2');
+ 	texto.appendChild(tituloList);
+ 	tituloList.innerHTML = box.value;
+
+ 	var input2 =document.createElement('input');
+ 	contenedor2.appendChild(input2);
+
+ 	var boton2 = document.createElement('button');
+ 	boton2.className='btn btn-success marl';
+ 	boton2.setAttribute('id', 'boton');
+ 	boton2.innerHTML='crear targeta';
+ 	boton2.setAttribute('onclick','targetas()');
+ 	contenedor2.appendChild(boton2);
+
+
+}
+
+
+
+
+
