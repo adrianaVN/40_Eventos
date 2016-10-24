@@ -16,13 +16,9 @@
       return false;
     }
  
-    // Agregamos el contenido al enlace
     enlace.appendChild(contenido);
-    // Le establecemos un atributo href
     enlace.setAttribute("type", "checkbox");
-    // Agrergamos el enlace (a) a la nueva tarea (li)
-    nuevaTarea.appendChild(enlace);
-    // Agregamos la nueva tarea a la lista
+    nuevaTarea.appendChilnlaced(e)
     lista.appendChild(nuevaTarea);
  
     tareaInput.value = "";
