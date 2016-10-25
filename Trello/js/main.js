@@ -55,9 +55,12 @@ function targetas(){
 	contenedor2.appendChild(contenedor3);
 
 	var texto2 = document.createElement('p');
-	texto.id ="texto2";
-	contenedor2.appendChild(texto2);
+	texto2.id ="texto2";
+	contenedor3.appendChild(texto2);
 
+	var targeta =document.createElement('input');
+	texto2.appendChild(targeta);
+	targeta.innerHTML=contenedor2.value;
 }
 
 
