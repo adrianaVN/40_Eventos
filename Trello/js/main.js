@@ -19,6 +19,7 @@ function crear(obj){
 	boton.setAttribute('onclick','guardar()');
 
 
+
 }
 
 function guardar(){
@@ -34,7 +35,7 @@ function guardar(){
  	texto.appendChild(tituloList);
  	tituloList.innerHTML = box.value;
 
- 	var input2 =document.createElement('input');
+ 	var input2 =document.createElement('textarea');
  	contenedor2.appendChild(input2);
 
  	var boton2 = document.createElement('button');
@@ -43,11 +44,20 @@ function guardar(){
  	boton2.innerHTML='crear targeta';
  	boton2.setAttribute('onclick','targetas()');
  	contenedor2.appendChild(boton2);
+ 	
 
 
 }
 
 
+function targetas(){
+	var contenedor3 = document.createElement('textarea');
+	contenedor2.appendChild(contenedor3);
 
+	var texto2 = document.createElement('p');
+	texto.id ="texto2";
+	contenedor2.appendChild(texto2);
+
+}
 
 
