@@ -28,39 +28,51 @@ function guardar(){
  	contenedor2.setAttribute('class', 'div1');
  	contenedor.appendChild(contenedor2);
 
- 	var texto = document.createElement('p');
+ 	
+ 	
+	var texto = document.createElement('p');
  	texto.id ="texto";
  	contenedor2.appendChild(texto);
  	var tituloList = document.createElement('h2');
  	texto.appendChild(tituloList);
  	tituloList.innerHTML = box.value;
 
- 	var input2 =document.createElement('textarea');
- 	contenedor2.appendChild(input2);
-
  	var boton2 = document.createElement('button');
  	boton2.className='btn btn-success marl';
  	boton2.setAttribute('id', 'boton');
- 	boton2.innerHTML='crear targeta';
- 	boton2.setAttribute('onclick','targetas()');
+ 	boton2.innerHTML='crear tarjeta';
+ 	boton2.setAttribute('onclick','tarjetas()');
  	contenedor2.appendChild(boton2);
+
+
+
+}
+
+
+function tarjetas(){
+	var contenedor3 = document.createElement('div');
+	contenedor2.appendChild(contenedor3);
+	
+
+	var texto2 = document.createElement('textarea');
+	texto2.id ="texto2";
+	contenedor3.appendChild(texto2);
+
+	var boton3 = document.createElement('button');
+	boton3.className='btn btn-success';
+ 	boton3.setAttribute('id', 'boton3');
+ 	boton3.innerHTML='guardar targeta';
+ 	boton3.setAttribute('onclick','guardarTarjeta()');
+ 	contenedor3.appendChild(boton3);
+
  	
 
 
 }
+function guardarTarjeta(){
 
-
-function targetas(){
-	var contenedor3 = document.createElement('textarea');
-	contenedor2.appendChild(contenedor3);
-
-	var texto2 = document.createElement('p');
-	texto2.id ="texto2";
-	contenedor3.appendChild(texto2);
-
-	var targeta =document.createElement('input');
-	texto2.appendChild(targeta);
-	targeta.innerHTML=contenedor2.value;
-}
-
+	var texto3 = document.createElement('a');
+	texto3.id ="texto3";
+	texto3.appendChild(texto2);	
+ }
 
