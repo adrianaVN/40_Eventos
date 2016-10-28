@@ -20,6 +20,7 @@ function crear(obj){
 
 
 
+
 }
 
 function guardar(){
@@ -54,9 +55,14 @@ function tarjetas(){
 	contenedor2.appendChild(contenedor3);
 	
 
-	var texto2 = document.createElement('textarea');
+	var texto2 = document.createElement('input');
 	texto2.id ="texto2";
 	contenedor3.appendChild(texto2);
+	contenedor3.setAttribute('draggable','true');
+	contenedor3.setAttribute('onmousedown', 'drag(ev)');
+	function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
 
 	var boton3 = document.createElement('button');
 	boton3.className='btn btn-success';
@@ -71,8 +77,8 @@ function tarjetas(){
 }
 function guardarTarjeta(){
 
-	var texto3 = document.createElement('a');
+	/*var texto3 = document.createElement('a');
 	texto3.id ="texto3";
-	texto3.appendChild(texto2);	
+	texto3.appendChild(texto2);	*/
  }
 

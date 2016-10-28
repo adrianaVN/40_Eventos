@@ -1,0 +1,30 @@
+.espace{
+	margin-top: 2%;
+}
+.div1{
+	background-color: #A17BA8;
+	width: 20%;
+	height: 10%;
+	padding: 1%;
+	display: inline-block;
+	margin-left: 3%;
+	border-radius: 10%;
+	padding-top: 2%;
+}
+.div2{
+	background-color:#9D08FB;
+	padding: 1%;
+	display:block;
+	border: black solid 1px;
+
+	}
+
+.marl{
+	margin-left: 3%;
+}
+.bg{
+	background-color:#9E0CDB;
+}
+input{
+	background-color: #CCB7CF;
+}
